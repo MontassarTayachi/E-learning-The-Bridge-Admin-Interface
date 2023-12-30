@@ -1,0 +1,122 @@
+.cours {
+    margin: auto;
+  }
+  
+ 
+  .menu {
+  margin-left: 200px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+  }
+  
+  .menuList {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  .Modifier{
+    margin-bottom: 10px;
+      width: 400px;
+      padding: 0px;
+      border-radius: 20px;
+      position: fixed;
+      top :-35%;
+      left:50%;
+      transform: translate(-50%,50%);
+      box-shadow: 0 13px 20px rgba(0, 0, 0, 0.736);
+      background-color: #f5f5f5;
+  }
+  .Modifier h1{
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-weight: 10;
+      font-size: 40px;
+      align-items: center;
+      color: darkslategray;
+      width: fit-content;
+      margin-bottom: 15px; 
+      margin-left: auto;
+      margin-right: auto;
+      width: 6em
+  }
+  .Modifier .buton{
+    height: 40px;
+    width: 40px;
+    color: whitesmoke;
+    font-size: 19px;
+    text-size-adjust: unset;
+    background-color: #343a40;
+    border-radius: 90px;
+    margin-left: 352px;
+    margin-top: 6px;
+    
+  }
+  .Modifier .solid{
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Modifier form {
+   margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  
+  .Modifier form input {
+    padding: 10px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.342);
+    color: white;
+    margin: 5px 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #fafafa72;
+  }
+  .Modifier .inputfile{
+    height: 50px;
+  }
+  
+  
+  .Modifier input::placeholder,
+  .Modifier textarea::placeholder {
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Modifier form input:focus,
+  
+  .Modifier form label {
+    margin-top: 10px;
+    color: darkslategray;
+  }
+  
+  .Modifier form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #0caa48;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+  .Modifier form button:hover{
+    transform: scale(1.1);
+  }
+  
+  .Modifier form .bout{
+    margin-bottom: 20px;
+    padding: auto;
+    width: 160px;
+  }

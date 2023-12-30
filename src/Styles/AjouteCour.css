@@ -1,0 +1,241 @@
+.contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .contact .leftSide {
+    height: 90%;
+    flex: 50%;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width:3px;
+ border-style:dotted;
+ border-color:rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 40px;
+    display: flex;
+    text-align: center;
+  }
+  .contact .leftSide img{
+    border-radius: 40px;
+  }
+  
+  .contact .rightSide {
+    padding-left: 50px;
+    height: 90%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact .rightSide h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 10;
+    font-size: 40px;
+    color: white;
+    width: fit-content;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  
+  form input {
+    padding: 10px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.342);
+    color: white;
+    background-color: rgba(24, 23, 23, 0.568);
+    margin: 5px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .inputfile{
+    height: 50px;
+  }
+  
+  form textarea {
+    margin-top: 15px;
+    height: 70px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.342);
+    color: white;
+    background-color: rgba(24, 23, 23, 0.568);
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  form input:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(255, 252, 252);
+  }
+  
+  form label {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #0caa48;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+  form button:hover{
+    transform: scale(1.1);
+  }
+  form button:hover svg{
+    animation: slide 1s ease-in-out infinite;
+  }
+  form button svg{
+    margin-left: 3px;
+  }
+  
+  @keyframes slide {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+  @media only screen and (max-height: 601px) {
+    .contact{
+      height: 100vh;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .contact {
+      flex-direction: column;
+      height: auto;
+    }
+    .contact .leftSide{
+      min-height: 40vh;
+    }
+    .contact .rightSide{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+   form{
+     padding-top: 15px;
+     width: 100%;
+     align-items: center;
+   }
+   input, textarea{
+     text-align: center;
+   }
+  }
+  @media only screen and (max-width: 650px){
+    .contact .rightSide h1 {
+      font-size: 40px;
+     }
+  }
+  
+  .lds-spinner {
+    color: official;
+   margin: 42%;
+    width: 20px;
+    height: 20px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
